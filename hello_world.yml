@@ -3,5 +3,8 @@
   gather_facts: no
 
   tasks:
-    - name: Hello World
-      shell: echo 'Hello World'  
+    - name: This is PDI
+      shell: echo 'PD Infra test for Sempahore'
+      register: out
+
+    - debug: var=out
